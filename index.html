@@ -1,40 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="main.css">
   <title>HTML Portfolio</title>
 </head>
 <body>
-
-  <div class="header">
-    <h1>Lee Raulin</h1>
-    <h2>Backend Python Web Developer</h2>
+  -
+  <meta charset="UTF-8">
+  <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" name="viewport">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" data-target="#portfolio-collapse-menu" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Lee Raulin</a>
+      </div><!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="portfolio-collapse-menu">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="carousel slide" data-ride="carousel" id="portfolio-carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li class="active" data-slide-to="0" data-target="#portfolio-carousel"></li>
+      <li data-slide-to="1" data-target="#portfolio-carousel"></li>
+      <li data-slide-to="2" data-target="#portfolio-carousel"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Who I am</h1>
+            <p>After serving in the US Coast Guard, I completed my master's in psychology online while teaching English in Korea. I am now beginning a career as a web developer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>What I do</h1>
+            <p>I am becoming proficient in full stack web development.</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>My passion</h1>
+            <p>I love learning new technologies and using them to solve interesting problems.</p>
+          </div>
+        </div>
+      </div>
+    </div><a class="left carousel-control" data-slide="prev" href="#portfolio-carousel" role="button"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <span class="sr-only">Previous</span></a> <a class="right carousel-control" data-slide="next" href="#portfolio-carousel" role="button"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span> <span class="sr-only">Next</span></a>
   </div>
-  <div class="tagline">
-    <h3>About Me</h3>
-    <p>After serving in the US Coast Guard, I completed my master's in psychology online while teaching English in Korea. I am now eager to begin a career as a web developer. Aside from trying to keep in shape, my main hobby is reading. I am fascinated with evolution and psychology, and also enjoy reading about history and politics. My new favorite Linux distro is Manjaro, and my favorite text editor is vim.</p>
-    <div class="skills">
-      <h3>Skills</h3>
-      <p>I am learning full stack web development, but as I have more talent for logic than creativity...graphic design baffles me, but I think databases are cool...I think back-end is what I will want to specialize in.</p>
-      <ul>
-        <li>HTML/CSS</li>
-        <li>Python/Django</li>
-        <li>SQL</li>
-        <li>Linux, Bash</li>
-        <li>Git</li>
-      </ul>
+  <div class="marketing">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <span class="glyphicon glyphicon-rub"></span>
+          <h3>Python</h3>
+          <p>Python is fun, and Django makes developing web apps a breeze.</p>
+        </div>
+        <div class="col-md-4">
+          <span class="glyphicon glyphicon-fire"></span>
+          <h3>HTML/CSS</h3>
+          <p>I can make websites like this one with the help of frameworks like Bootstrap!</p>
+        </div>
+        <div class="col-md-4">
+          <span class="glyphicon glyphicon-leaf"></span>
+          <h3>SQL</h3>
+          <p>I enjoy working with databases.</p>
+        </div>
+      </div>
     </div>
-    <div class="contact">
-      <h3>Contact Me</h3>
+  </div>
+  <footer>
+    <div class="container">
+      <h3>Get in touch!</h3>
       <p>Add me on <a href="https://www.linkedin.com/in/leeraulin/">LinkedIn</a> or <a href="https://github.com/lraulin">Github</a>.</p>
     </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
 </body>
 </html>
